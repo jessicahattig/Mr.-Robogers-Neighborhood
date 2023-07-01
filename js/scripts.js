@@ -10,7 +10,10 @@ window.addEventListener("load", function () {
   
 
 resetBtn.addEventListener("click", function() {
-
+  let inputNumber = document.getElementById("number");
+  inputNumber.value = "";
+  numberArray = [];
+  document.getElementById("final-result").innerText = "";
 });
 
 //Business Logic
@@ -29,6 +32,6 @@ function beepBoop(event) {
       numberArray.push(i);
     }
   }
-  document.getElementById("final-results").innerText = numberArray;
+  document.getElementById("final-result").innerText = numberArray;
 }
 });
