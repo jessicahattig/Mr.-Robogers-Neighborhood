@@ -14,3 +14,5 @@ function beepBoop(inputNumber) {
   }
   return numberArray;
 }
+
+//UI Logic
