@@ -7,8 +7,10 @@ function beepBoop() {
       numberArray.push("Beep")
     } else if (i === 2) {
       numberArray.push("Boop")
-    } else {
-      numberArray.push(i);
+    } else if (i === 3) {
+      numberArray.push("Won't you be my neighbor?")
+    } else if {
+      numberArray.push(i); 
     }
   }
   return numberArray;
