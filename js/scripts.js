@@ -1,5 +1,15 @@
+//UI Logic
+window.addEventListener("load", function () {
+  const form = document.querySelector("form");
+  form.addEventListener("submit", beepBoop)
+  let resetBtn = document.querySelector("button#reset");
+  document.getElementById("final-results").innertext = numberArray;
+
+
 //Business Logic
-function beepBoop(inputNumber) {
+function beepBoop(event) {
+  event.preventDefault();
+  
   let numberArray = [];
   for (let i = 0; i<= inputNumber; i++) {
     if (i.toString().includes("3")) {
@@ -14,5 +24,4 @@ function beepBoop(inputNumber) {
   }
   return numberArray;
 }
-
-//UI Logic
+});
