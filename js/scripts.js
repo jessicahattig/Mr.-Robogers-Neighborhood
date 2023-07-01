@@ -5,9 +5,9 @@ window.addEventListener("load", function () {
   
   
   let resetBtn = document.querySelector("button#reset");
-  let numberArray = []; 
+  let numberArray = [];
   document.getElementById("final-result").innerText = numberArray;
-  let inputNumber = document.getElementById("number").value;
+  
 
 resetBtn.addEventListener("click", function() {
 
@@ -16,6 +16,7 @@ resetBtn.addEventListener("click", function() {
 //Business Logic
 function beepBoop(event) {
   event.preventDefault();
+  let inputNumber = document.getElementById("number").value;
   numberArray = [];
   for (let i = 0; i<= inputNumber; i++) {
     if (i.toString().includes("3")) {
