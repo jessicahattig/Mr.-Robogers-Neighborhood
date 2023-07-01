@@ -23,11 +23,11 @@ function beepBoop(event) {
   numberArray = [];
   for (let i = 0; i<= inputNumber; i++) {
     if (i.toString().includes("3")) {
-      numberArray.push("Won't you be my neighbor?")
+      numberArray.push(" Won't you be my neighbor?")
     } else if(i.toString().includes("2")) {
-      numberArray.push("Boop!")
+      numberArray.push(" Boop!")
     } else if (i.toString().includes("1")) {
-      numberArray.push("Beep!");
+      numberArray.push(" Beep!");
     } else {
       numberArray.push(i);
     }
