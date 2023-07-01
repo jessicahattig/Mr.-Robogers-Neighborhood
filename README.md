@@ -40,7 +40,6 @@ Test: "It should return an array of numbers from 0 to the user's inputted number
 Code: beepBoop(0);
 Expected Output: [0]
 
-<<<<<<< HEAD
 Test: "It should replace numbers that contain a "1" with "Beep"
 Code: beepBoop(1)
 Expected Output: [0,"Beep"]
@@ -53,8 +52,6 @@ Test: "It should replace numbers that contain a "3" with "Won't you be my neighb
 Code: beepBoop(3)
 Expected Output: [0, "Beep", "Boop", "Won't you be my neighbor?"]
 
-=======
->>>>>>> 93617a9 (Function 1, test 1, pass.)
 ## License
 
 MIT
