@@ -15,11 +15,15 @@ input {
   font-size: 25px;
   text-align: center;
 }
-p {
-  font-size: 20px;
-}
+
 body {
-  background-color:#26c6da
+  background-color:#26c6da;
+  font-family: 'Dekko';
+  font-size: 22px;
+}
+p.finalresult {
+  text-size: 50px;
+
 }
 
 
