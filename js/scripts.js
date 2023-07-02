@@ -10,7 +10,7 @@ window.addEventListener("load", function () {
     event.preventDefault();
     const inputNumber = numberInput.value;
     numberArray = beepBoop(inputNumber);
-    resultElement.innerText = numberArray;
+    resultElement.innerHTML = numberArray.join(" ");
   });
   
   resetBtn.addEventListener("click", function () {
