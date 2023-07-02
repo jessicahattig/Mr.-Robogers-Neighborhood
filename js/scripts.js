@@ -23,7 +23,6 @@ window.addEventListener("load", function () {
 
 //Business Logic
 function beepBoop(inputNumber) {
-  event.preventDefault();
   let numberArray = [];
   for (let i = 0; i<= inputNumber; i++) {
     if (i.toString().includes("3")) {
