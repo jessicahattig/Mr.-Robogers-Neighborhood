@@ -1,26 +1,30 @@
 //UI Logic
 window.addEventListener("load", function () {
   const form = document.querySelector("form");
-  form.addEventListener("submit", beepBoop)
-  
-  
-  let resetBtn = document.querySelector("button#reset");
+  const resetBtn = document.querySelector("button#reset");
+  const numberInput = document.getElementById("number");
+  const resultElement = document.getElementById("final-result");
   let numberArray = [];
-  document.getElementById("final-result").innerText = numberArray;
-  
 
-resetBtn.addEventListener("click", function() {
-  let inputNumber = document.getElementById("number");
-  inputNumber.value = "";
-  numberArray = [];
-  document.getElementById("final-result").innerText = "";
+  form.addEventListener("submit", function (event) {
+    event.preventDefault();
+    const inputNumber = numberInput.value;
+    numberArray = beepBoop(inputNumber);
+    resultElement.innerText = numberArray;
+  });
+  
+  resetBtn.addEventListener("click", function () {
+    numberInput.value = "";
+    numberArray = [];
+    resultElement.innerText = "";
+  });
 });
 
+
 //Business Logic
-function beepBoop(event) {
+function beepBoop(inputNumber) {
   event.preventDefault();
-  let inputNumber = document.getElementById("number").value;
-  numberArray = [];
+  let numberArray = [];
   for (let i = 0; i<= inputNumber; i++) {
     if (i.toString().includes("3")) {
       numberArray.push(" Won't you be my neighbor?")
@@ -32,6 +36,5 @@ function beepBoop(event) {
       numberArray.push(i);
     }
   }
-  document.getElementById("final-result").innerText = numberArray;
-}
-});
+  return numberArray;
+};
