@@ -13,14 +13,13 @@
 * _VS Code_
 * _Github_
 * _Git_
-* _Bootstrap_
-*_W3Schools_
+* _W3Schools_
 
 ## Description
 
 _Introducing Mr. Roboger's Neighborhood, a web application for a fun and interactive experience! With this project, users can generate a unique list of numbers based on their input, and watch as special substitutions add a twist to the output. By leveraging JavaScript, loops, arrays, and branching logic, I've developed a solution that ensures an engaging user experience._
 
-[GitHub Pages ](https://jessicahattig.github.io/)
+[GitHub Pages ](https://jessicahattig.github.io/Mr.-Robogers-Neighborhood)
 
 ## Setup/Installation Requirements
 
